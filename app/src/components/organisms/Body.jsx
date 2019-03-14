@@ -7,15 +7,19 @@ export default class Header extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      
+
     };
   }
+
+  handleCLick = () => {
+    //
+  };
 
   render() {
     return (
       <Container>
         <div>body</div>
-        <Button>button</Button>
+        <Button onClick={this.handleCLick} >button</Button>
       </Container>
     )
   }

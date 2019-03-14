@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-export default class Button extends React.Component {
+export default class Button extends React.PureComponent {
 
   constructor(props) {
     super(props);
@@ -12,7 +12,7 @@ export default class Button extends React.Component {
 
   render() {
     return (
-      <Outer>
+      <Outer onClick={this.props.onClick}>
         {this.props.children}
       </Outer>
     )
@@ -21,6 +21,6 @@ export default class Button extends React.Component {
 
 // styled-components
 
-const Outer = styled.div`
-  background-color: #fcfc22;
+const Outer = styled.button`
+  /* background-color: #fcfc22; */
 `;

@@ -1,5 +1,5 @@
 import React from 'react';
-import Index from './components/templates/Index';
+import Index from './components/pages/Index';
 
 export default class App extends React.Component {
   render() {
